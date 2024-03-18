@@ -2,7 +2,7 @@
  * @Author: Lv Jingxin lv510987@163.com
  * @Date: 2024-02-22 09:37:18
  * @LastEditors: Lv Jingxin lv510987@163.com
- * @LastEditTime: 2024-03-18 09:28:08
+ * @LastEditTime: 2024-03-18 09:39:53
  * @FilePath: /react-router-pro/src/page/Board/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AEexport
  */
@@ -20,6 +20,8 @@ function reducer(state, action) {
 // useMemo 用于消耗非常大的做缓存
 
 // memo 缓存  props不改变时不会重新渲染
+
+// useCallback   缓存函数
 
 const Board = () => {
   const [state, dispatch] = useReducer(reducer, 0);
